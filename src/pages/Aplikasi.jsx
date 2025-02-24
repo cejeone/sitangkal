@@ -38,7 +38,7 @@ const Aplikasi = () => {
                                 <div className="card-body p-2">
                                     <img className="w-full h-50 object-cover rounded-xl" src={ImageCMDBuild} alt="Placeholder" />
 
-                                    <a href="http://103.233.103.22:8080/cimahi" target="_blank" className="text-xl font-bold text-gray-800 mt-2">
+                                    <a href="http://103.233.103.22:8080/cimahi_bim" target="_blank" className="text-xl font-bold text-gray-800 mt-2">
                                         CMDBuild
                                     </a>
                                     <p>Kelola aset dengan mudah melalui sistem manajemen basis data konfigurasi.</p>
