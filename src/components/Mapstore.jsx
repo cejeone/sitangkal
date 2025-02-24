@@ -54,7 +54,7 @@ const Mapstore = () => {
                             <span className="text-white">Aplikasi Portal</span>
                             <h1 className="text-4xl text-white font-bold py-5">Dashboard Dan Geostories</h1>
                         </div>
-                        <div className="isi">
+                        <div className="isi flex">
                             <p className="text-white text-lg content-center">
                                 Antarmuka pengguna yang menyajikan data secara visual dalam bentuk grafik, peta, tabel, story, dan widget lainnya.
                             </p>
@@ -62,20 +62,16 @@ const Mapstore = () => {
                     </div>
                     <div className="flex flex-col justify-center">
                         <div role="tablist" className="tabs tabs-box bg-neutral">
-                            <input type="radio" name="my_tabs_5" role="tab" className="tab" aria-label="Dashboard" defaultChecked />
+                            <input type="radio" name="my_tabs_5" role="tab" className="tab tab-custom" aria-label="Dashboard" defaultChecked />
                             <div className="tab-content bg-neutral py-6">
                                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
                                     {dashboardData.map((item, index) => (
-                                        <div key={index} className="card card-border border-2 border-neutral-500 w-auto shadow-sm">
+                                        <div key={index} className="card card-border border-2 border-neutral-500 w-auto shadow-sm rounded-xl">
                                             <figure>
-                                                <img
-                                                    className="p-2 rounded-xl"
-                                                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                                    alt={item.nama || 'Image'}
-                                                />
+                                                <img className="p-2 rounded-xl" src="https://placehold.co/300x200" alt={item.nama || 'Image'} />
                                             </figure>
                                             <div className="card-body p-2 mt-3">
-                                                <h2 className="card-title text-white">{item.nama}</h2>
+                                                <h3 className="card-title text-white">{item.nama}</h3>
                                                 <div className="card-actions justify-end mt-5">
                                                     <a href={extractUrl(item.url)} target="_blank" rel="noopener noreferrer" className="btn btn-base">
                                                         Lihat
@@ -87,7 +83,7 @@ const Mapstore = () => {
                                 </div>
                             </div>
 
-                            <input type="radio" name="my_tabs_5" role="tab" className="tab text-white border border-white" aria-label="Geostories" />
+                            <input type="radio" name="my_tabs_5" role="tab" className="tab tab-custom" aria-label="Geostories" />
                             <div className="tab-content bg-neutral p-6 border">Tab content 2</div>
                         </div>
                     </div>

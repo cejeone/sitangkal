@@ -26,7 +26,7 @@ const Navbar = () => {
     const isActive = (path) => (location.pathname === path ? 'active' : '');
 
     return (
-        <div className="navbar bg-base-100 shadow-sm fixed z-50">
+        <div className="navbar bg-base-100  fixed top-0 z-50">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -55,11 +55,6 @@ const Navbar = () => {
                                 Data
                             </Link>
                         </li>
-                        <li>
-                            <Link to="/proses" className={`nav-link ${isActive('/proses')}`}>
-                                Proses
-                            </Link>
-                        </li>
                     </ul>
                 </div>
                 <Link to="/" className="btn btn-ghost text-xl">
@@ -86,11 +81,6 @@ const Navbar = () => {
                     <li>
                         <Link to="/data" className={`nav-link ${isActive('/data')}`}>
                             Data
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/proses" className={`nav-link ${isActive('/proses')}`}>
-                            Proses
                         </Link>
                     </li>
                 </ul>

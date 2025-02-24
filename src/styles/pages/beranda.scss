@@ -1,0 +1,22 @@
+.tentang-sitangkal {
+    .judul-tentang {
+        margin: 50px 0;
+    }
+}
+
+.mapstore {
+    .tab-custom {
+        color: #fff;
+        border: 1px solid #fff;
+
+        &:hover {
+            background-color: #fff;
+            color: black;
+            transition: 0.2s ease-in-out;
+        }
+
+        &:checked {
+            color: black;
+        }
+    }
+}
